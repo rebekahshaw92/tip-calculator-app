@@ -1,0 +1,134 @@
+$strongCyan: hsl(172, 67%, 45%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+$lightGrayishCyan2: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+$veryDarkCyan: hsl(183, 100%, 15%);
+
+body {
+    background-color: $lightGrayishCyan;
+}
+
+.header {
+    padding: 40px;
+}
+
+.tip {
+    background-color: $white;
+    border-radius: 30px;
+    margin-top: 20px;
+    @include media-breakpoint-up(lg){
+        margin: 50px;
+        height: 460px;
+    }
+    .percentage {
+        background-color: $veryDarkCyan;
+        border-color: $veryDarkCyan;
+        width: 190px;
+        height: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        color: $lightGrayishCyan;
+        @include media-breakpoint-up(lg) {
+            height: 45px;
+            width:  130px;
+        }
+    }
+}
+
+.active.percentage {
+        color: $veryDarkCyan;
+        background-color: $strongCyan;
+        border-color: $strongCyan;
+}
+
+.formIcon {
+    width: 0.8rem;
+    height: 1rem;
+}
+
+.input-group-text {
+    margin-left: 40px;
+    background-color: $lightGrayishCyan2;
+    border: none;
+
+}
+
+.input-group {
+    width: 90% !important;
+}
+
+#bill, #people, #custom {
+    background-color: $lightGrayishCyan2;
+    //margin-left: 60px;
+  // margin-right: 40px;
+    width: 80%;
+   border: none;
+   cursor: pointer;
+   &:hover {
+    border: solid 2px $strongCyan !important;
+   }
+}
+
+
+#bill, #people {
+    @include media-breakpoint-up(lg){
+        width: 380px !important;
+    }
+}
+#custom {
+    height: 60px !important;
+     @include media-breakpoint-up(lg) {
+        height: 45px !important;
+        width: 134px !important;
+        margin-left: 38px;
+     }
+}
+
+.tipAmount {
+    margin: 40px;
+    border-radius: 20px;
+    background-color: $veryDarkCyan;
+    @include media-breakpoint-up(lg) {
+        height: 85%;
+    }
+}
+
+#reset {
+    background-color: $strongCyan;
+    color: $veryDarkCyan;
+    border-color: $strongCyan;
+    font-weight: 700;
+    margin: 40px;
+    padding: 10px;
+    font-size: 28px;
+    width: 80%;
+    @include media-breakpoint-up(lg) {
+        font-size:  22px;
+        margin-top: 80px;
+    }
+}
+.errorBill, .errorPeople {
+    position: relative;
+    color: red;
+    transition: opacity .3s ease;
+    opacity: 1;
+    padding-top: 40px;
+    font-size: 16px;
+    @include media-breakpoint-up(lg) {
+        padding-top: 15px;
+    }
+     p {
+       text-align: center;
+       @include media-breakpoint-up(lg) {
+           text-align: left;
+           padding-left: 40px;
+       }
+    }
+}
+
+.peopleInput.errorPeople { 
+    input {
+        border: solid 2px red !important;
+   } 
+}

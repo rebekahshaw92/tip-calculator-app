@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  
+    <link rel="stylesheet" type="text/css" href="css/main2.css">
+    
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <div class="main">
+                    <div class="personal">
+                        <img src="images/image-jeremy.png" alt="Jeremy" />
+                        <div class="text">
+                            <h3>Report for</h3>
+                            <h2>Jeremy Robson</h2>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Daily</a></li>
+                        <li><a href="#" class="active">Weekly</a></li>
+                        <li><a href="#">Monthly</a></li>
+                    </ul>
+                </div>
+                <div class="card work">
+                    <img src="images/icon-work.svg" alt="work logo" />
+                    <div class="inner-card">
+                        <div class="up">
+                            <div class="actvity">Work</div>
+                            <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+                        </div>
+                        <div class="down">
+                            <div class="time" id="work-time"></div>
+                            <p id="work-last"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card play">
+                    <img src="images/icon-play.svg" alt="play logo" />
+                    <div class="inner-card">
+                        <div class="up">
+                            <div class="activity">Play</div>
+                            <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+                        </div>
+                        <div class="down">
+                            <div class="time" id="play-time"></div>
+                            <p id="play-last"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card study">
+                    <img src="images/icon-study.svg" alt="study logo" />
+                    <div class="inner-card">
+                        <div class="up">
+                            <div class="activity">Study</div>
+                            <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+                        </div>
+                        <div class="down">
+                            <div class="time" id="study-time"></div>
+                            <p id="study-last"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card exercise">
+                    <img src="images/icon-exercise.svg" alt="exercise logo" />
+                    <div class="inner-card">
+                        <div class="up">
+                            <div class="activity">Exercise</div>
+                            <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+                        </div>
+                        <div class="down">
+                            <div class="time" id="exercise-time"></div>
+                            <p id="exercise-last"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card social">
+                    <img src="images/icon-social.svg" alt="social logo" />
+                    <div class="inner-card">
+                        <div class="up">
+                            <div class="activity">Social</div>
+                            <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+                        </div>
+                        <div class="down">
+                            <div class="time" id="social-time"></div>
+                            <p id="social-last"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card self-care">
+                    <img src="images/icon-self-care.svg" alt="self-care logo" />
+                    <div class="inner-card">
+                        <div class="up">
+                            <div class="activity">Self-care</div>
+                            <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
+                        </div>
+                        <div class="down">
+                            <div class="time" id="self-care"></div>
+                            <p id="self-last"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>

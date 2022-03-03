@@ -1,0 +1,82 @@
+$font: 'Space Mono', monospace;
+$veryDarkCyan: hsl(183, 100%, 15%);
+$lightGrayishCyan: hsl(185, 41%, 84%);
+$lightGrayishCyan2: hsl(189, 41%, 97%);
+$darkGrayishCyan: hsl(184, 14%, 56%);
+$strongCyan: hsl(172, 67%, 45%);
+
+body {
+    font-family: $font;
+}
+
+.billTitle {
+    color: $veryDarkCyan;
+    padding-left: 40px;
+    padding-top: 40px;
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+    
+}
+
+.tipTitle, .numberTitle {
+    color: $veryDarkCyan;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        padding-bottom: 5px;
+        padding-top: 15px;
+    }
+}
+
+#bill, #people {
+    text-align: right; 
+        color: $veryDarkCyan;
+        font-weight: 700;
+        font-size: 24px;
+    
+}
+
+#custom {
+        text-align: right;
+        color: $veryDarkCyan;
+        font-weight: 500;
+        font-size: 24px;
+        @include media-breakpoint-up(lg) {
+            //padding-left: 20px;
+            float: left;
+        }
+}
+
+.tipAmountTitle, .totalTitle {
+    padding-left: 40px;
+    padding-top: 40px;
+    font-weight: 500;
+    color: $lightGrayishCyan;
+    @include media-breakpoint-up(lg) {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+.person {
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: $darkGrayishCyan;
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+}
+
+.amount {
+    padding-top: 50px;
+    font-weight: 700;
+    padding-right: 10px;
+    color: $strongCyan;
+    font-size: 34px;
+    @include media-breakpoint-up(lg) {
+        font-size: 36px;
+    }
+}
