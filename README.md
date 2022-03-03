@@ -37,10 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/rebekahshaw92//
-tip-calculator-app)
-- Live Site URL: [Live Site](https://rebekahshaw92.github.io//
-tip-calculator-app)
+- Solution URL: [Solution](https://github.com/rebekahshaw92//tip-calculator-app)
+- Live Site URL: [Live Site](https://rebekahshaw92.github.io//tip-calculator-app)
 
 ## My Process
 
